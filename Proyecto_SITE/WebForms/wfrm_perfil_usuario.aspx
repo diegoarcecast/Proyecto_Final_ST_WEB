@@ -23,8 +23,8 @@ body {font-family: "Lato", sans-serif}
   <div class="w3-bar w3-black w3-card">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="wfrm_Principal.aspx" class="w3-bar-item w3-button w3-padding-large">Inicio</a>
-    <a href="#ProximosEventos" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Proximos Eventos</a>
-    <a href="#Nosotros" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Nosotros</a>
+    <a href="wfrm_Principal.aspx#ProximosEventos" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Proximos Eventos</a>
+    <a href="wfrm_Principal.aspx#Nosotros" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Nosotros</a>
        <div class="w3-dropdown-hover w3-hide-small">
         <button class="w3-padding-large w3-button" title="More">Categorías<i class="fa fa-caret-down"></i></button>     
         <div class="w3-dropdown-content w3-bar-block w3-card-4">
@@ -39,35 +39,54 @@ body {font-family: "Lato", sans-serif}
         <a href="wfrm_Term_Condic.aspx" class="w3-bar-item w3-button">Términos y Condiciones</a>
         <a href="wfrm_como_comprar.aspx" class="w3-bar-item w3-button">¿Cómo comprar?</a>
         <a href="wfrm_donde_retirar.aspx" class="w3-bar-item w3-button">¿Dónde retirar?</a>
-        <a href="#Contacto" class="w3-bar-item w3-button">Contacto</a>
+        <a href="wfrm_Principal.aspx#Contacto" class="w3-bar-item w3-button">Contacto</a>
       </div>
     </div>
       <div class="w3-right">
-          <a href="wfrm_Inicio_Sesion.aspx" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Iniciar Sesión</a>
-          <a href="Reg_Usuario.aspx" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Registrarse</a>   
+          <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Cerrar Sesión</a>
       </div>    
   </div>
 </div>
 
 <!-- Navbar  -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#ProximosEventos" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ProximosEventos</a>
-  <a href="#Nosotros" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Nosotros</a>
-  <a href="wfrm_Inicio_Sesion.aspx" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Iniciar Sesión</a>
-  <a href="Reg_Usuario.aspx" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Registrarse</a>   
+  <a href="wfrm_Principal.aspx#ProximosEventos" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ProximosEventos</a>
+  <a href="wfrm_Principal.aspx#Nosotros" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Nosotros</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Cerrar Sesión</a>
 </div>
 
 <!-- Div Pagina -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
-    <div class="w3-center">
-        <h1>
-            Mis Datos Personales
-        </h1>
+    <div class="content">
+        <table>
+            <tr>
+                <th>
+                <div class="sidenav">
+                  <a href="wfrm_Mod_Datos.aspx">Actualizar Datos</a>
+                  <a href="#">Historial</a>
+                  <a href="#">Cerrar Sesión</a>
+                </div>
+                </th>
+                <th>
+                  <h1>Mis Datos Personales</h1>
+                    <p>Nombre</p>
+			        <span class="icon-case"><i class="fa fa-user"></i></span>
+				    <input type="text" name="nombre" id="nombre" readonly="false"/>
+                    <p>Apellido</p>
+                    <span class="icon-case"><i class="fa fa-user"></i></span>
+				    <input type="text" name="apellido" id="apellido" readonly="false"/>
+                    <p>Cedula</p>
+			        <span class="icon-case"><i class="fa fa-credit-card"></i></span>
+				    <input type="number" name="cedula" id="cedula" readonly="false"/>
+                    <p>Correo</p>	
+			        <span class="icon-case"><i class="fa fa-envelope-o"></i></span>
+                    <input type="email" name="email" id="email" readonly="false"/>
+                    <p>Celular</p>
+			        <span class="icon-case"><i class="fa fa-phone"></i></span>
+				    <input type="tel" name="celular" id="celular" readonly="false" />
+                </th>
+            </tr>           
+        </table>
     </div>
-
-  
- </div>
-
 
 
 <!-- Footer -->

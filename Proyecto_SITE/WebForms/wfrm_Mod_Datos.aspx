@@ -42,8 +42,7 @@
       </div>
     </div>
       <div class="w3-right">
-          <a href="wfrm_Inicio_Sesion.aspx" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Iniciar Sesión</a>
-          <a href="Reg_Usuario.aspx" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Registrarse</a>   
+          <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Cerrar Sesión</a>
       </div>    
   </div>
 </div>
@@ -63,48 +62,48 @@
 			      <div class="form-group">
 			        <p>Nombre <span>*</span></p>
 			        <span class="icon-case"><i class="fa fa-user"></i></span>
-				    <input type="text" name="nombre" id="nombre" data-rule="required" data-msg="Campo Obligatorio"/>
+				    <input type="text" name="nombre" id="nombre" required="required"/>
                 <div class="validation"></div>
        </div> 
 
             <div class="form-group">
             <p>Apellido <span>*</span></p>
             <span class="icon-case"><i class="fa fa-user"></i></span>
-				<input type="text" name="apellido" id="apellido" data-rule="required" data-msg="Campo Obligatorio"/>
+				<input type="text" name="apellido" id="apellido" required="required"/>
                 <div class="validation"></div>
 			</div>
 
 			<div class="form-group">
 			<p>Correo <span>*</span></p>	
 			<span class="icon-case"><i class="fa fa-envelope-o"></i></span>
-                <input type="email" name="email" id="email" data-rule="email" data-msg="Campo Obligatorio"/>
+                <input type="email" name="email" id="email" required="required"/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Cedula <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-credit-card"></i></span>
-				<input type="number" name="cedula" id="cedula" data-rule="required" data-msg="Campo Obligatorio"/>
+				<input type="number" name="cedula" id="cedula" required="required"/>
                 <div class="validation"></div>
 			</div>
 
 			<div class="form-group">
 			<p>Fecha nacimiento <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-calendar"></i></span>
-				<input type="date" name="date" id="date" data-rule="required" data-msg="Campo Obligatorio"/>
+				<input type="date" name="date" id="date" required="required"/>
                 <div class="validation"></div>
 			</div>
 
 			<div class="form-group">
 			<p>Celular <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-phone"></i></span>
-				<input type="tel" name="celular" id="celular" data-rule="required" data-msg="Campo Obligatorio"/>
+				<input type="tel" name="celular" id="celular" required="required"/>
                 <div class="validation"></div>
 			</div>	
             <div class="form-group">
 			<p>Provincia <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-building-o"></i></span>
-				<input type="text" name="provincia" id="provincia" data-rule="required" data-msg="Campo Obligatorio"/>
+				<input type="text" name="provincia" id="provincia" required="required"/>
                 <div class="validation"></div>
 			</div>
 	</div>
@@ -114,40 +113,40 @@
 			<div class="form-group">
 			<p>Nombre Completo <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-male"></i></span>
-				<input type="text" name="nom_tarjeta" id="nom_tarjeta" data-rule="required" data-msg="Campo Obligatorio"/>
+				<input type="text" name="nom_tarjeta" id="nom_tarjeta" required="required"/>
                 <div class="validation"></div>
 			</div>	
 
 			<div class="form-group">
 			<p>Número de Tarjeta<span>*</span></p>	
 			<span class="icon-case"><i class="fa fa-credit-card"></i></span>
-				<input type="number" name="num_tarjeta" id="num_tarjeta" data-rule="maxlen:10" data-msg="Campo Obligatorio"/>
+				<input type="number" name="num_tarjeta" id="num_tarjeta" required="required"/>
                 <div class="validation"></div>
 			</div>
 
 			<div class="form-group">
 			<p>Tipo Tarjeta <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-info"></i></span>
-                <input type="text" name="tipo_tarjeta" id="tipo_tarjeta" data-rule="required" data-msg="Campo Obigatorio"/>
+                <input type="text" name="tipo_tarjeta" id="tipo_tarjeta" required="required"/>
                 <div class="validation"></div>
 			</div>
 
 			<div class="form-group">
 			<p>Fecha Expiración <span>*</span></p>	
 			<span class="icon-case"><i class=" fa fa-calendar-o"></i></span>
-                <input type="datetime" name="fecha_exp" id="fecha_exp" data-rule="required" data-msg="Campo Obligatorio"/>
+                <input type="datetime" name="fecha_exp" id="fecha_exp" required="required"/>
                 <div class="validation"></div>
 			</div>		
 			<div class="form-group">
 			<p>Dirección <span>*</span></p>
 			<span class="icon-case"><i class="fa fa-text-width"></i></span>
-                <textarea name="message" rows="14" data-rule="required" data-msg="Campo Obligatorio"></textarea>
+                <textarea name="message" rows="14" required="required"></textarea>
                 <div class="validation"></div>
 			</div>	
 	</div>
 	</div>
-      <a href="#" class="w3-button w3-black w3-section w3-center" type="submit" id="btn_actualizar">Actualizar</a>
-      <a href="#" class="w3-button w3-black w3-section w3-center" type="submit" id="btn_cancelar">Cancelar</a>
+      <button class="w3-button w3-black w3-section w3-center" type="submit" id="btn_actualizar">Actualizar</button>
+      <a href="wfrm_perfil_usuario.aspx" class="w3-button w3-black w3-section w3-center" type="submit" id="btn_cancelar">Cancelar</a>
 
       
           
