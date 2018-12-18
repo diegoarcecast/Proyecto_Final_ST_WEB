@@ -1,4 +1,5 @@
-﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -86,6 +87,7 @@
     <Content Include="WebForms\wfrm_Cat_Deportes.aspx" />
     <Content Include="WebForms\wfrm_Cat_Teatro.aspx" />
     <Content Include="WebForms\wfrm_como_comprar.aspx" />
+    <Content Include="WebForms\wfrm_Compra.aspx" />
     <Content Include="WebForms\wfrm_donde_retirar.aspx" />
     <Content Include="WebForms\wfrm_Inicio_Sesion.aspx" />
     <Content Include="WebForms\wfrm_Mod_Datos.aspx" />
@@ -130,6 +132,13 @@
     </Compile>
     <Compile Include="WebForms\wfrm_como_comprar.aspx.designer.cs">
       <DependentUpon>wfrm_como_comprar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\wfrm_Compra.aspx.cs">
+      <DependentUpon>wfrm_Compra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\wfrm_Compra.aspx.designer.cs">
+      <DependentUpon>wfrm_Compra.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForms\wfrm_donde_retirar.aspx.cs">
       <DependentUpon>wfrm_donde_retirar.aspx</DependentUpon>
