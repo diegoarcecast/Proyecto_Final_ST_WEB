@@ -13,6 +13,16 @@
     </head>
 <style>
 body {font-family: "Lato", sans-serif}
+    .auto-style1 {
+        width: 77px;
+        height: 26px;
+    }
+    .auto-style2 {
+        height: 26px;
+    }
+    .auto-style3 {
+        width: 383px;
+    }
 </style>
 <body>
 
@@ -62,36 +72,69 @@ body {font-family: "Lato", sans-serif}
     <div class="w3-third w3-margin-bottom">
           <img src="../Resources/90p.png" alt="90 Minutos por la vida" style="width:150%" class="w3-hover-opacity"/>
           <div class="w3-container w3-white">
-              <table>
+              <table class="auto-style3">
         <tr>
             <td><strong></strong></td>
             <td colspan="2">&nbsp;</td>
-            <td colspan="2"><strong></strong></td>
         </tr>
         <tr>
-            <td><strong>Cantidad de entradas</strong></td>
-            <td><strong><asp:DropDownList ID="DropDownList2" runat="server">
+            <td class="auto-style2"><strong>Cantidad de entradas</strong></td>
+            <td class="auto-style2"><strong><asp:DropDownList ID="DropDownList2" runat="server">
                 </asp:DropDownList>
-                </strong></td><td><strong></strong></td>
+                </strong></td><td class="auto-style1"><strong></strong></td>
         </tr>
         <tr>
             <td><strong>Ubicacion</strong></td>
             <td><strong></strong>
                 <asp:DropDownList ID="DropDownList1" runat="server">
                 </asp:DropDownList>
-            </td><td><strong></strong></td>
+            </td>
         </tr>
             <tr>
             <td><strong>Total</strong></td>
-            <td><asp:Label ID="Label1" runat="server" Text="Label"></asp:Label> </td><td><strong></strong></td>
+            <td><asp:Label ID="Label1" runat="server" Text="Label"></asp:Label> </td>
         </tr>
         <tr>
             <td><strong></strong></td>
             <td colspan="2">&nbsp;</td>
-            <td colspan="2"><strong></strong></td>
         </tr>
     </table>
-             <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/WebForms/wfrm_TerminarCompra.aspx">Comprar entradas</asp:HyperLink>
+               <div class="w3-container w3-white">
+       <table>
+        <tr>
+            <td><strong>Detalles de Facturación</strong></td>
+        </tr>
+        <tr>
+            
+            <td><strong></strong></td>
+        </tr>
+        <tr>
+            
+            <td>&nbsp;</td>
+        </tr>
+           <tr>
+            <td><strong>Tipo de Tarjeta:</strong></td>
+            <td><strong><asp:DropDownList ID="DropDownList3" runat="server"></asp:DropDownList></strong></td>
+        </tr>
+           <tr>
+            <td><strong>Ingrese el nombre completo del dueño de la tarjeta:</strong></td>
+            <td><strong><asp:TextBox ID="TextBox3" runat="server"></asp:TextBox></strong></td>
+        </tr>
+        <tr>
+            <td><strong>Ingrese el número de tarjeta:</strong></td>
+            <td><strong><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox></strong></td>
+        </tr>
+           
+           <tr>
+            <td><strong>Código de Seguridad:</strong></td>
+            <td><strong><asp:TextBox ID="TextBox2" runat="server"></asp:TextBox></strong></td>
+        </tr>
+           <tr>
+            <td><strong></strong></td>
+        </tr>
+    </table>
+
+             <a href="wfrm_TerminarCompra.aspx" class="w3-button w3-black w3-margin-bottom">Comprar entrada</a> 
           
            </div>
         </div>
