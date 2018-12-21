@@ -62,65 +62,66 @@ body {font-family: "Lato", sans-serif}
     <div class="w3-third w3-margin-bottom">
           <img src="../Resources/img1.jpg" alt="90 Minutos por la vida" style="width:150%" class="w3-hover-opacity"/>
           <div class="w3-container w3-white">
-                <table class="auto-style3">
+               <table class="auto-style3">
         <tr>
-            <td><strong></strong></td>
+            <td class="auto-style4"><strong></strong></td>
             <td colspan="2">&nbsp;</td>
         </tr>
         <tr>
-            <td class="auto-style2"><strong>Cantidad de entradas</strong></td>
+            <td class="auto-style5"><strong>Cantidad de entradas</strong></td>
             <td class="auto-style2"><strong><asp:DropDownList ID="DropDownList2" runat="server">
                 </asp:DropDownList>
                 </strong></td><td class="auto-style1"><strong></strong></td>
         </tr>
         <tr>
-            <td><strong>Ubicacion</strong></td>
+            <td class="auto-style4"><strong>Ubicacion</strong></td>
             <td><strong></strong>
                 <asp:DropDownList ID="DropDownList1" runat="server">
                 </asp:DropDownList>
             </td>
         </tr>
             <tr>
-            <td><strong>Total</strong></td>
+            <td class="auto-style4"><strong>Total</strong></td>
             <td><asp:Label ID="Label1" runat="server" Text="Label"></asp:Label> </td>
         </tr>
         <tr>
-            <td><strong></strong></td>
-            <td colspan="2">&nbsp;</td>
-        </tr>
-    </table>
-               <div class="w3-container w3-white">
+            <td class="auto-style4">
        <table>
         <tr>
-            <td><strong>Detalles de Facturación</strong></td>
+            <td class="auto-style6"><strong>Detalles de Facturación</strong></td>
         </tr>
         <tr>
             
-            <td><strong></strong></td>
+            <td class="auto-style6">&nbsp;</td>
         </tr>
         <tr>
             
-            <td>&nbsp;</td>
+            <td class="auto-style6">&nbsp;</td>
         </tr>
            <tr>
-            <td><strong>Tipo de Tarjeta:</strong></td>
+            <td class="auto-style6"><strong>Tipo de Tarjeta:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></td>
             <td><strong><asp:DropDownList ID="DropDownList3" runat="server"></asp:DropDownList></strong></td>
         </tr>
            <tr>
-            <td><strong>Ingrese el nombre completo del dueño de la tarjeta:</strong></td>
+            <td class="auto-style6"><strong>Ingrese el nombre completo del dueño de la tarjeta:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></td>
             <td><strong><asp:TextBox ID="TextBox3" runat="server"></asp:TextBox></strong></td>
         </tr>
         <tr>
-            <td><strong>Ingrese el número de tarjeta:</strong></td>
+            <td class="auto-style6"><strong>Ingrese el número de tarjeta:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></td>
             <td><strong><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox></strong></td>
         </tr>
            
            <tr>
-            <td><strong>Código de Seguridad:</strong></td>
+            <td class="auto-style6"><strong>Código de Seguridad:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></td>
             <td><strong><asp:TextBox ID="TextBox2" runat="server"></asp:TextBox></strong></td>
         </tr>
            <tr>
-            <td><strong></strong></td>
+            <td class="auto-style6">&nbsp;</td>
+        </tr>
+    </table>
+
+             </td>
+            <td colspan="2">&nbsp;</td>
         </tr>
     </table>
              

@@ -102,7 +102,7 @@ body {font-family: "Lato", sans-serif}
        Correo
      </span></td>
 	<td>
-	  <input type="text" size="30" class="textbox" name="CORREO" value=""/>
+	  <input type="text" runat="server" size="30" class="textbox" name="CORREO" value="" id="txt1"/>
 	  <%--<span class="field_value"> * </span>--%>
 	</td>
 </tr>
@@ -112,7 +112,7 @@ body {font-family: "Lato", sans-serif}
        Clave
      </span></td>
 	<td>
-	  <input type="password" size="30" class="textbox" name="CLAVE" value=""/>
+	  <input type="password"  runat="server" size="30" class="textbox" name="CLAVE" value="" id="txt2"/>
 	  <%--<span class="field_value"> * </span>--%>
 	</td>
 </tr>
@@ -122,7 +122,7 @@ body {font-family: "Lato", sans-serif}
        Confirmación Clave
      </span></td>
 	<td>
-	  <input type="password" size="30" class="textbox" name="RECLAVE" value=""/>
+	  <input type="password"  runat="server" size="30" class="textbox" name="RECLAVE" value="" id="txt3"/>
 	  <%--<span class="field_value"> * </span>--%>
 	</td>
 </tr>
@@ -132,7 +132,7 @@ body {font-family: "Lato", sans-serif}
        Nombre
      </span></td>
 	<td>
-	  <input type="text" size="30" class="textbox" name="NOMBRE" value=""/>
+	  <input type="text"  runat="server" size="30" class="textbox" name="NOMBRE" value="" id="txt4"/>
 	  <%--<span class="field_value"> * </span>--%>
 	</td>
 </tr>
@@ -142,7 +142,7 @@ body {font-family: "Lato", sans-serif}
        Teléfono
      </span></td>
 	<td>
-	  <input type="text" size="15" class="textbox" name="TELEFONO" value=""/>
+	  <input type="text"  runat="server" size="15" class="textbox" name="TELEFONO" value="" id="txt5"/>
 	  <%--<span class="field_value"> * </span>--%>
 	</td>
 </tr>
@@ -165,12 +165,15 @@ body {font-family: "Lato", sans-serif}
        Notas
      </span></td>
 	<td>
-          <textarea cols="30" rows="3" name="NOTAS"></textarea>
+          <textarea  runat="server" cols="30" rows="3" name="NOTAS" id="txt6"></textarea>
 	</td>
 </tr>
 <tr>
-     <td><input type="button" value="Insertar" style="margin-top:13px;" class="w3-button w3-black w3-section w3-center" onclick="Validar(this.form)"/>&nbsp;</td>
-     <td><input type="button" value="Cancelar" class="w3-button w3-black w3-section w3-center" onclick="cancelar()"/>&nbsp;</td>
+     <td>
+         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
+     </td>
+    
+     <td>&nbsp;</td>
 </tr>
 </tbody></table>
 </td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table>
