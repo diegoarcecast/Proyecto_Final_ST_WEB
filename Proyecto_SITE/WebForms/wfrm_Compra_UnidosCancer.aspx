@@ -90,7 +90,7 @@ body {font-family: "Lato", sans-serif}
         <tr>
             <td class="auto-style5"><strong>Cantidad de entradas</strong></td>
             <td class="auto-style2">
-                <asp:DropDownList ID="DropDownList1" runat="server">
+                <asp:DropDownList ID="DDL_CantidadEnt" runat="server">
                     <asp:ListItem>1</asp:ListItem>
                     <asp:ListItem>2</asp:ListItem>
                     <asp:ListItem>3</asp:ListItem>
@@ -101,7 +101,7 @@ body {font-family: "Lato", sans-serif}
         </tr>
         <tr>
             <td class="auto-style4"><strong>Ubicacion</strong></td>
-            <td><strong><asp:DropDownList ID="DropDownList2" runat="server">
+            <td><strong><asp:DropDownList ID="DDL_Ubicacion" runat="server">
                 <asp:ListItem Value="Sombra ESTE">Sombra ESTE</asp:ListItem>
                 <asp:ListItem>Sombra Oeste</asp:ListItem>
                 <asp:ListItem>Sol Norte</asp:ListItem>
@@ -113,7 +113,7 @@ body {font-family: "Lato", sans-serif}
         </tr>
             <tr>
             <td class="auto-style4"><strong>Total</strong></td>
-            <td><asp:Label ID="Label1" runat="server" Text="Label"></asp:Label> </td>
+            <td>5000</td>
         </tr>
         <tr>
             <td class="auto-style4">

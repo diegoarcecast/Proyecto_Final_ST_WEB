@@ -92,7 +92,7 @@ body {font-family: "Lato", sans-serif}
         </tr>
             <tr>
             <td class="auto-style4"><strong>Total</strong></td>
-            <td><asp:Label ID="Label1" runat="server" Text="Label"></asp:Label> </td>
+            <td>7000</td>
         </tr>
         <tr>
             <td class="auto-style4">
