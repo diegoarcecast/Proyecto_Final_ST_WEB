@@ -62,65 +62,15 @@ body {font-family: "Lato", sans-serif}
              <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
     <div class="w3-third w3-margin-bottom">
      <div class="w3-container w3-white">
-       <table>
-        <tr>
-            <td colspan="2"><strong></strong></td>
-            <td colspan="2"><strong>Detalles de Facturación</strong></td>
-        </tr>
-        <tr>
-            
-            <td><strong></strong></td>
-        </tr>
-        <tr>
-            <td><strong></strong></td>
-            <td><strong>Cantidad de entradas</strong></td>
-            <td><strong></strong></td>
-            <td><asp:Label ID="Label2" runat="server" Text="Label"></asp:Label></td>
-        </tr>
-        <tr>
-            <td><strong></strong></td>
-            <td><strong>Ubicacion</strong></td>
-            <td><strong></strong></td>
-            <td><asp:Label ID="Label3" runat="server" Text="Label"></asp:Label></td>
-        </tr>
-        <tr>
-            <td><strong></strong></td>
-            <td><strong></strong></td>
-            <td><strong></strong></td>
-            <td><strong></strong></td>
-            <td><strong>Total</strong></td>
-            <td><asp:Label ID="Label1" runat="server" Text="Label"></asp:Label> </td><td><strong></strong></td>
-        </tr>
-        <tr>
-            <td><strong></strong></td>
-        </tr>
-           <tr>
-            <td><strong></strong></td>
-            <td><strong>Tipo de Tarjeta:</strong></td>
-            <td><strong><asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList></strong></td>
-        </tr>
-           <tr>
-            <td><strong></strong></td>
-            <td><strong>Ingrese el nombre completo del dueño de la tarjeta:</strong></td>
-            <td><strong><asp:TextBox ID="TextBox3" runat="server"></asp:TextBox></strong></td>
-        </tr>
-        <tr>
-            <td><strong></strong></td>
-            <td><strong>Ingrese el número de tarjeta:</strong></td>
-            <td><strong><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox></strong></td>
-        </tr>
-           
-           <tr>
-            <td><strong></strong></td>
-            <td><strong>Código de Seguridad:</strong></td>
-            <td><strong><asp:TextBox ID="TextBox2" runat="server"></asp:TextBox></strong></td>
-        </tr>
-           <tr>
-            <td><strong></strong></td>
-        </tr>
-    </table>
-               <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Comprar entrada</button>
-           </div>
+         <asp:Label ID="Label1" runat="server" Text="Label">Se le ha enviado un correo con la confirmacion.</asp:Label>
+         <h1>
+             Gracias por su compra!
+
+         </h1>
+
+                <a href="wfrm_Principal.aspx" class="w3-button w3-black w3-margin-bottom">Menu Principal</a> 
+
+     </div>
        </div>
                  <asp:Label ID="Label5" runat="server" Text="Label">*Recuerde retirar su entrada en los puntos identificados</asp:Label>
         
