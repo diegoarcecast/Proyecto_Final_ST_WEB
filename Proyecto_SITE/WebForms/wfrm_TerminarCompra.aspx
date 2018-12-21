@@ -1,10 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="wfrm_Cat_Deportes.aspx.cs" Inherits="Proyecto_SITE.WebForms.wfrm_Cat_Deportes" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="wfrm_TerminarCompra.aspx.cs" Inherits="Proyecto_SITE.WebForms.wfrm_TerminarCompra" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>SpecialTicket</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>SpecialTicket</title>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
@@ -15,6 +16,8 @@
 body {font-family: "Lato", sans-serif}
 </style>
 <body>
+
+    <form id="form1" runat="server">
 
 <!-- Navbar -->
 <div class="w3-top">
@@ -54,33 +57,80 @@ body {font-family: "Lato", sans-serif}
   <a href="wfrm_Inicio_Sesion.aspx" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Iniciar Sesión</a>
   <a href="Reg_Usuario.aspx" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Registrarse</a>   
 </div>
-    
-     <div class="w3-white">
+    <div class="w3-white">
         <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
              <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
     <div class="w3-third w3-margin-bottom">
-          <img src="../Resources/90p.png" alt="90 Minutos por la vida" style="width:150%" class="w3-hover-opacity"/>
-          <div class="w3-container w3-white">
-            <p><b>Contra el cáncer infantil</b></p>
-            <p class="fa fa-calendar">06 Ene 2019</p><br />
-            <p class="fa fa-clock-o">4:00pm</p><br />
-              <p class="fa fa-home">Estadio Nacional</p><br />
-            <p class="fa fa-money">Precios:</p><br />
-              <p class="fa fa-ticket">General Adulto: $30</p><br />
-              <p class="fa fa-ticket">General Niño: $15</p><br />
-              <p class="fa fa-ticket">Palco: $35</p><br />
-           
-          </div>
-        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/WebForms/wfrm_Compra.aspx">Comprar entradas</asp:HyperLink>
+     <div class="w3-container w3-white">
+       <table>
+        <tr>
+            <td colspan="2"><strong></strong></td>
+            <td colspan="2"><strong>Detalles de Facturación</strong></td>
+        </tr>
+        <tr>
             
-         
-        </div></div>
+            <td><strong></strong></td>
+        </tr>
+        <tr>
+            <td><strong></strong></td>
+            <td><strong>Cantidad de entradas</strong></td>
+            <td><strong></strong></td>
+            <td><asp:Label ID="Label2" runat="server" Text="Label"></asp:Label></td>
+        </tr>
+        <tr>
+            <td><strong></strong></td>
+            <td><strong>Ubicacion</strong></td>
+            <td><strong></strong></td>
+            <td><asp:Label ID="Label3" runat="server" Text="Label"></asp:Label></td>
+        </tr>
+        <tr>
+            <td><strong></strong></td>
+            <td><strong></strong></td>
+            <td><strong></strong></td>
+            <td><strong></strong></td>
+            <td><strong>Total</strong></td>
+            <td><asp:Label ID="Label1" runat="server" Text="Label"></asp:Label> </td><td><strong></strong></td>
+        </tr>
+        <tr>
+            <td><strong></strong></td>
+        </tr>
+           <tr>
+            <td><strong></strong></td>
+            <td><strong>Tipo de Tarjeta:</strong></td>
+            <td><strong><asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList></strong></td>
+        </tr>
+           <tr>
+            <td><strong></strong></td>
+            <td><strong>Ingrese el nombre completo del dueño de la tarjeta:</strong></td>
+            <td><strong><asp:TextBox ID="TextBox3" runat="server"></asp:TextBox></strong></td>
+        </tr>
+        <tr>
+            <td><strong></strong></td>
+            <td><strong>Ingrese el número de tarjeta:</strong></td>
+            <td><strong><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox></strong></td>
+        </tr>
+           
+           <tr>
+            <td><strong></strong></td>
+            <td><strong>Código de Seguridad:</strong></td>
+            <td><strong><asp:TextBox ID="TextBox2" runat="server"></asp:TextBox></strong></td>
+        </tr>
+           <tr>
+            <td><strong></strong></td>
+        </tr>
+    </table>
+               <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Comprar entrada</button>
+           </div>
+       </div>
+                 <asp:Label ID="Label5" runat="server" Text="Label">*Recuerde retirar su entrada en los puntos identificados</asp:Label>
+        
             </div>
+            </div>
+        
         </div>
 
 
-
-    <!-- Footer -->
+ <!-- Footer -->
 <footer class="w3-footer w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
         <h3>Síguenos</h3>
           <i class="fa fa-facebook-official w3-hover-opacity"></i>
@@ -91,5 +141,6 @@ body {font-family: "Lato", sans-serif}
           <i class="fa fa-linkedin w3-hover-opacity"></i>  
           <h4>© 2018 Special Ticket. Todos los derechos reservados.</h4>
 </footer>
+    </form>
 </body>
 </html>

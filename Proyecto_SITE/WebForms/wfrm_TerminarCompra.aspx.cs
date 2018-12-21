@@ -7,13 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace Proyecto_SITE.WebForms
 {
-    public partial class wfrm_Compra : System.Web.UI.Page
+    public partial class wfrm_TerminarCompra : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-
-        
     }
 }

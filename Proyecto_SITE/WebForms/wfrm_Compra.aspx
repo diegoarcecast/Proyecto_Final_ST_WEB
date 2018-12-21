@@ -16,6 +16,8 @@ body {font-family: "Lato", sans-serif}
 </style>
 <body>
 
+    <form id="form1" runat="server">
+
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-black w3-card">
@@ -54,9 +56,61 @@ body {font-family: "Lato", sans-serif}
   <a href="wfrm_Inicio_Sesion.aspx" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Iniciar Sesión</a>
   <a href="Reg_Usuario.aspx" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Registrarse</a>   
 </div>
-    
+    <div class="w3-white">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+             <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+    <div class="w3-third w3-margin-bottom">
+          <img src="../Resources/90p.png" alt="90 Minutos por la vida" style="width:150%" class="w3-hover-opacity"/>
+          <div class="w3-container w3-white">
+              <table>
+        <tr>
+            <td><strong></strong></td>
+            <td colspan="2">&nbsp;</td>
+            <td colspan="2"><strong></strong></td>
+        </tr>
+        <tr>
+            <td><strong>Cantidad de entradas</strong></td>
+            <td><strong><asp:DropDownList ID="DropDownList2" runat="server">
+                </asp:DropDownList>
+                </strong></td><td><strong></strong></td>
+        </tr>
+        <tr>
+            <td><strong>Ubicacion</strong></td>
+            <td><strong></strong>
+                <asp:DropDownList ID="DropDownList1" runat="server">
+                </asp:DropDownList>
+            </td><td><strong></strong></td>
+        </tr>
+            <tr>
+            <td><strong>Total</strong></td>
+            <td><asp:Label ID="Label1" runat="server" Text="Label"></asp:Label> </td><td><strong></strong></td>
+        </tr>
+        <tr>
+            <td><strong></strong></td>
+            <td colspan="2">&nbsp;</td>
+            <td colspan="2"><strong></strong></td>
+        </tr>
+    </table>
+             <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/WebForms/wfrm_TerminarCompra.aspx">Comprar entradas</asp:HyperLink>
+          
+           </div>
+        </div>
+            </div>
+            </div>
+        </div>
 
 
-</form>
+ <!-- Footer -->
+<footer class="w3-footer w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+        <h3>Síguenos</h3>
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          <i class="fa fa-instagram w3-hover-opacity"></i>
+          <i class="fa fa-snapchat w3-hover-opacity"></i>
+          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+          <i class="fa fa-twitter w3-hover-opacity"></i>
+          <i class="fa fa-linkedin w3-hover-opacity"></i>  
+          <h4>© 2018 Special Ticket. Todos los derechos reservados.</h4>
+</footer>
+    </form>
 </body>
 </html>

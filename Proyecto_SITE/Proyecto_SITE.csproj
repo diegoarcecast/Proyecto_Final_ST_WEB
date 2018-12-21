@@ -94,6 +94,7 @@
     <Content Include="WebForms\wfrm_perfil_usuario.aspx" />
     <Content Include="WebForms\wfrm_politica_privacidad.aspx" />
     <Content Include="WebForms\wfrm_Principal.aspx" />
+    <Content Include="WebForms\wfrm_TerminarCompra.aspx" />
     <Content Include="WebForms\wfrm_Term_Condic.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -181,6 +182,13 @@
     </Compile>
     <Compile Include="WebForms\wfrm_Principal.aspx.designer.cs">
       <DependentUpon>wfrm_Principal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\wfrm_TerminarCompra.aspx.cs">
+      <DependentUpon>wfrm_TerminarCompra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\wfrm_TerminarCompra.aspx.designer.cs">
+      <DependentUpon>wfrm_TerminarCompra.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForms\wfrm_Term_Condic.aspx.cs">
       <DependentUpon>wfrm_Term_Condic.aspx</DependentUpon>
