@@ -89,15 +89,26 @@ body {font-family: "Lato", sans-serif}
         </tr>
         <tr>
             <td class="auto-style5"><strong>Cantidad de entradas</strong></td>
-            <td class="auto-style2"><strong><asp:DropDownList ID="DropDownList2" runat="server">
+            <td class="auto-style2">
+                <asp:DropDownList ID="DropDownList1" runat="server">
+                    <asp:ListItem>1</asp:ListItem>
+                    <asp:ListItem>2</asp:ListItem>
+                    <asp:ListItem>3</asp:ListItem>
+                    <asp:ListItem>4</asp:ListItem>
+                    <asp:ListItem>5</asp:ListItem>
                 </asp:DropDownList>
-                </strong></td><td class="auto-style1"><strong></strong></td>
+            </td><td class="auto-style1"><strong></strong></td>
         </tr>
         <tr>
             <td class="auto-style4"><strong>Ubicacion</strong></td>
-            <td><strong></strong>
-                <asp:DropDownList ID="DropDownList1" runat="server">
+            <td><strong><asp:DropDownList ID="DropDownList2" runat="server">
+                <asp:ListItem Value="Sombra ESTE">Sombra ESTE</asp:ListItem>
+                <asp:ListItem>Sombra Oeste</asp:ListItem>
+                <asp:ListItem>Sol Norte</asp:ListItem>
+                <asp:ListItem>Sol Sur</asp:ListItem>
+                <asp:ListItem>Palco</asp:ListItem>
                 </asp:DropDownList>
+                </strong>
             </td>
         </tr>
             <tr>
@@ -120,20 +131,30 @@ body {font-family: "Lato", sans-serif}
         </tr>
            <tr>
             <td class="auto-style6"><strong>Tipo de Tarjeta:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></td>
-            <td><strong><asp:DropDownList ID="DropDownList3" runat="server"></asp:DropDownList></strong></td>
+            <td><strong><asp:DropDownList ID="DropDownList3" runat="server">
+                <asp:ListItem>Mastercard</asp:ListItem>
+                <asp:ListItem>Visa</asp:ListItem>
+                </asp:DropDownList></strong></td>
         </tr>
            <tr>
             <td class="auto-style6"><strong>Ingrese el nombre completo del dueño de la tarjeta:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></td>
-            <td><strong><asp:TextBox ID="TextBox3" runat="server"></asp:TextBox></strong></td>
+            <td><strong>
+                <asp:RegularExpressionValidator  ID="Regex" runat="server" ErrorMessage="Ingrese los datos adecuados" ValidationExpression="[a-zA-Z]*[^!@%~?:#$%^&*()'0123456789]*" ControlToValidate="TextBox3" ValidationGroup="vg"> </asp:RegularExpressionValidator>
+                <asp:TextBox ID="TextBox3" runat="server" ValidationGroup="vg"></asp:TextBox></strong></td>
         </tr>
         <tr>
             <td class="auto-style6"><strong>Ingrese el número de tarjeta:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></td>
-            <td><strong><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox></strong></td>
+            <td>
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="Ingrese los datos adecuados" ValidationExpression="^[0-9]+$"></asp:RegularExpressionValidator>
+                <strong><asp:TextBox ID="TextBox1" runat="server" ValidationGroup="vg2" MaxLength="17"></asp:TextBox></strong></td>
         </tr>
            
            <tr>
             <td class="auto-style6"><strong>Código de Seguridad:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></td>
-            <td><strong><asp:TextBox ID="TextBox2" runat="server"></asp:TextBox></strong></td>
+               
+            <td>
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="TextBox2" ErrorMessage="Ingrese los datos adecuados" ValidationExpression="^[0-9]+$"></asp:RegularExpressionValidator>
+                <strong><asp:TextBox ID="TextBox2" runat="server" ValidationGroup="vg3" MaxLength="3"></asp:TextBox></strong></td>
         </tr>
            <tr>
             <td class="auto-style6">&nbsp;</td>
