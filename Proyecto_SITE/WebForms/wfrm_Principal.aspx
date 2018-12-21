@@ -85,7 +85,7 @@ body {font-family: "Lato", sans-serif}
             <p><b>90 minutos por la vida</b></p>
             <p class="w3-opacity">06 Enero 2019</p>
             <p>Unidos contra el cáncer infantil</p>
-            <button class="w3-button w3-black w3-margin-bottom">Comprar entrada</button>
+            <a href="wfrm_Compra_UnidosCancer.aspx" class="w3-button w3-black w3-margin-bottom">Comprar entrada</a> 
           </div>
         </div>
         <div class="w3-third w3-margin-bottom">
@@ -94,7 +94,8 @@ body {font-family: "Lato", sans-serif}
             <p><b>Orquesta Filarmónica</b></p>
             <p class="w3-opacity">16-17 Dic 2018</p>
             <p>Disfute del talento nacional</p>
-            <button class="w3-button w3-black w3-margin-bottom">Comprar entrada</button>
+            
+              <a href="wfrm_Compra_SomosLatinos.aspx" class="w3-button w3-black w3-margin-bottom">Comprar entrada</a> 
           </div>
         </div>
       </div>
