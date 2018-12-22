@@ -15,8 +15,13 @@
     </head>
 <style>
 body {font-family: "Lato", sans-serif}
+    .auto-style1 {
+        height: -42px;
+    }
 </style>
 <body>
+
+    <form id="form1" runat="server">
 
 <!-- Navbar -->
 <div class="w3-top">
@@ -69,20 +74,31 @@ body {font-family: "Lato", sans-serif}
                 <th>
                   <h1>Mis Datos Personales</h1>
                     <p>Nombre</p>
-			        <span class="icon-case"><i class="fa fa-user"></i></span>
-				    <input type="text" name="nombre" id="nombre" readonly="false"/>
-                    <p>Apellido</p>
-                    <span class="icon-case"><i class="fa fa-user"></i></span>
-				    <input type="text" name="apellido" id="apellido" readonly="false"/>
-                    <p>Cedula</p>
+			        <span class="icon-case">
+                    <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                    <i class="fa fa-user"></i></span>
+				    &nbsp;<p>Apellido</p>
+                    <span class="icon-case"><i class="fa fa-user">
+                    <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                    </i></span>
+				    &nbsp;<p>Cedula</p>
 			        <span class="icon-case"><i class="fa fa-credit-card"></i></span>
-				    <input type="number" name="cedula" id="cedula" readonly="false"/>
-                    <p>Correo</p>	
-			        <span class="icon-case"><i class="fa fa-envelope-o"></i></span>
-                    <input type="email" name="email" id="email" readonly="false"/>
-                    <p>Celular</p>
-			        <span class="icon-case"><i class="fa fa-phone"></i></span>
-				    <input type="tel" name="celular" id="celular" readonly="false" />
+				    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+&nbsp;<p>Correo</p>	
+			        <span class="icon-case">
+                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                    <i class="fa fa-envelope-o"></i></span>
+                    &nbsp;<p>Clave</p>	
+			        <span class="icon-case">
+                    <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
+                    <i class="fa fa-envelope-o"></i></span>
+                    &nbsp;<p>Celular</p>
+			        <span class="icon-case">
+                    <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+                    <i class="fa fa-phone"></i></span>&nbsp;<hr />
+                    <asp:CheckBox ID="CheckBox1" runat="server" Text="Notificaciones" />
+                    <hr class="auto-style1" />
+                    <asp:Button ID="Button1" runat="server" Text="Cambiar" OnClick="Button1_Click" style="height: 26px" />
                 </th>
             </tr>           
         </table>
@@ -100,6 +116,8 @@ body {font-family: "Lato", sans-serif}
           <i class="fa fa-linkedin w3-hover-opacity"></i>  
           <h4>© 2018 Special Ticket. Todos los derechos reservados.</h4>
 </footer>
+
+    </form>
 
 </body>
 </html>

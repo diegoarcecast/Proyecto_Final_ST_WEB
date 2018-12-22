@@ -6,3 +6,11 @@ C:\Users\Alexander\Source\Repos\Proyecto_Final_ST_WEB\Proyecto_BLL\bin\Debug\Pro
 C:\Users\Alexander\Source\Repos\Proyecto_Final_ST_WEB\Proyecto_BLL\bin\Debug\Proyecto_DAL.pdb
 C:\Users\Alexander\Source\Repos\Proyecto_Final_ST_WEB\Proyecto_BLL\obj\Debug\Proyecto_BLL.dll
 C:\Users\Alexander\Source\Repos\Proyecto_Final_ST_WEB\Proyecto_BLL\obj\Debug\Proyecto_BLL.pdb
+C:\Users\diego\Desktop\New folder\Proyecto_BLL\bin\Debug\Proyecto_BLL.dll.config
+C:\Users\diego\Desktop\New folder\Proyecto_BLL\bin\Debug\Proyecto_BLL.dll
+C:\Users\diego\Desktop\New folder\Proyecto_BLL\bin\Debug\Proyecto_BLL.pdb
+C:\Users\diego\Desktop\New folder\Proyecto_BLL\bin\Debug\Proyecto_DAL.dll
+C:\Users\diego\Desktop\New folder\Proyecto_BLL\bin\Debug\Proyecto_DAL.pdb
+C:\Users\diego\Desktop\New folder\Proyecto_BLL\obj\Debug\Proyecto_BLL.csprojResolveAssemblyReference.cache
+C:\Users\diego\Desktop\New folder\Proyecto_BLL\obj\Debug\Proyecto_BLL.dll
+C:\Users\diego\Desktop\New folder\Proyecto_BLL\obj\Debug\Proyecto_BLL.pdb
