@@ -17,8 +17,6 @@ namespace Proyecto_SITE.WebForms
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            BDClient obj = new BDClient();
-            obj.Modificar_Usuario(TextBox1.Text.ToString(), TextBox6.Text.ToString(), TextBox4.Text.ToString(), TextBox2.Text.ToString(), TextBox5.Text.ToString(), CheckBox1.Checked);
-        }
+                }
     }
 }

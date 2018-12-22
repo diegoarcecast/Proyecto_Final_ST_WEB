@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="wfrm_Principal.aspx.cs" Inherits="Proyecto_SITE.WebForms.wfrm_Principal" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="wfrm_Inicio_Sesion.aspx.cs" Inherits="Proyecto_SITE.WebForms.wfrm_Inicio_Sesion" %>
 
 <!DOCTYPE html>
 
@@ -65,14 +65,14 @@ body {font-family: "Lato", sans-serif}
             <br /> <br />
             <asp:Label runat="server" ID="lbl_Correo">Correo Electronico:</asp:Label>
             <br /> <br />   
-                <asp:TextBox runat="server" ID="txt_Correo" MaxLength="76" CssClass=" w3-large"/> 
+                <asp:TextBox runat="server" ID="txt_Correo" MaxLength="76" CssClass=" w3-large" /> 
             <br /> <br />
             <asp:Label runat="server" ID="lbl_Contraseña">Contraseña:</asp:Label>
             <br /> <br />
             <asp:TextBox runat="server" ID="txt_Contraseña" MaxLength="32" CssClass="w3-large"/> 
             <br /> <br /> <br />
 
-        <a href="wfrm_perfil_usuario.aspx" class="w3-button w3-black w3-section w3-center" type="submit" id="btn_iniciar">Iniciar Sesión</a>
+             <a href="wfrm_perfil_usuario.aspx" class="w3-button w3-black w3-section w3-center" type="submit" id="btn_Ligin">Iniciar Sesion</a>
         <a href="#" class="w3-button w3-black w3-section w3-center" type="submit" id="btn_reset_pass">¿Olvido su contraseña?</a>
         </div>
         </form>

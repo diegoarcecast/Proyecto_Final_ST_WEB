@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="wfrm_Principal.aspx.cs" Inherits="Proyecto_SITE.WebForms.wfrm_Principal" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="wfrm_perfil_usuario.aspx.cs" Inherits="Proyecto_SITE.WebForms.wfrm_perfil_usuario" %>
 
 <!DOCTYPE html>
 
