@@ -25,7 +25,7 @@ namespace Proyecto_BLL
             dtParametros.Rows.Add("@i_FK_idProgramacion", "1", obj_DAL.IDProgramacion1);
             dtParametros.Rows.Add("@dec_precioArticulo", "2", obj_DAL.Precio_Articulo1);
 
-            obj_service.InsertarNonQuery("dbo.SP__INSERTAR_fac_Articulo", dtParametros, ref sMsjError);
+            //obj_service.InsertarNonQuery("dbo.SP__INSERTAR_fac_Articulo", dtParametros, ref sMsjError);
 
             if (sMsjError == string.Empty)
 
@@ -57,7 +57,7 @@ namespace Proyecto_BLL
             dtParametros.Rows.Add("@i_FK_idProgramacion", "1", obj_DAL.IDProgramacion1);
             dtParametros.Rows.Add("@dec_precioArticulo", "2", obj_DAL.Precio_Articulo1);
 
-            obj_service.InsertarNonQuery("dbo.SP_ACTUALIZAR_fac_Articulo", dtParametros, ref sMsjError);
+            //obj_service.InsertarNonQuery("dbo.SP_ACTUALIZAR_fac_Articulo", dtParametros, ref sMsjError);
 
             if (sMsjError == string.Empty)
 
@@ -78,7 +78,7 @@ namespace Proyecto_BLL
         {
             DataTable dt = new DataTable();
 
-            dt = obj_Service.Listar("dbo.SP_SELECCIONAR_fac_Articulo");
+            //dt = obj_Service.Listar("dbo.SP_SELECCIONAR_fac_Articulo");
 
             return dt;
 
@@ -87,7 +87,7 @@ namespace Proyecto_BLL
         public DataTable FiltrarFacArticulo(ref CLS_FacArticulo_DAL obj_DAL, string Filtro)
         {
             DataTable DT = new DataTable();
-            DT = obj_service.Filtrar("dbo.SP_Filtrar_fac_Articulo", "@i_PK_idArticulo", SqlDbType.Int, Filtro);
+            //DT = obj_service.Filtrar("dbo.SP_Filtrar_fac_Articulo", "@i_PK_idArticulo", SqlDbType.Int, Filtro);
 
             return DT;
 

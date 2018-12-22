@@ -25,7 +25,7 @@ namespace Proyecto_BLL
             dtParametros.Rows.Add("@vc_ubicacionLugar", "2", obj_DAL.UbicacionLugar1);
             dtParametros.Rows.Add("b_activoLugar", "1", obj_DAL.ActivoLugar1);
 
-            obj_service.InsertarNonQuery("dbo.SP__INSERTAR_eve_Lugar", dtParametros, ref sMsjError);
+            //obj_service.InsertarNonQuery("dbo.SP__INSERTAR_eve_Lugar", dtParametros, ref sMsjError);
 
             if (sMsjError == string.Empty)
 
@@ -56,7 +56,7 @@ namespace Proyecto_BLL
             dtParametros.Rows.Add("@vc_ubicacionLugar", "2", obj_DAL.UbicacionLugar1);
             dtParametros.Rows.Add("b_activoLugar", "1", obj_DAL.ActivoLugar1);
 
-            obj_service.InsertarNonQuery("dbo.SP_ACTUALIZAR_eve_Lugar", dtParametros, ref sMsjError);
+            //obj_service.InsertarNonQuery("dbo.SP_ACTUALIZAR_eve_Lugar", dtParametros, ref sMsjError);
 
             if (sMsjError == string.Empty)
 
@@ -77,7 +77,7 @@ namespace Proyecto_BLL
         {
             DataTable dt = new DataTable();
 
-            dt = obj_Service.Listar("dbo.SP_SELECCIONAR_eve_Lugar");
+            //dt = obj_Service.Listar("dbo.SP_SELECCIONAR_eve_Lugar");
 
             return dt;
 
@@ -86,7 +86,7 @@ namespace Proyecto_BLL
         public DataTable FiltrarEvento(ref CLS_Evento_DAL obj_DAL, string Filtro)
         {
             DataTable DT = new DataTable();
-            DT = obj_service.Filtrar("dbo.SP_Filtrar_eve_Lugar", "@i_PK_idLugar", SqlDbType.Int, Filtro);
+            //DT = obj_service.Filtrar("dbo.SP_Filtrar_eve_Lugar", "@i_PK_idLugar", SqlDbType.Int, Filtro);
 
             return DT;
 

@@ -28,7 +28,7 @@ namespace Proyecto_BLL
 
 
 
-            obj_service.InsertarNonQuery("dbo.SP__INSERTAR_usr_Usuario", dtParametros, ref sMsjError);
+            //obj_service.InsertarNonQuery("dbo.SP__INSERTAR_usr_Usuario", dtParametros, ref sMsjError);
 
             if (sMsjError == string.Empty)
 
@@ -64,7 +64,7 @@ namespace Proyecto_BLL
 
 
 
-            obj_service.InsertarNonQuery("dbo.SP_ACTUALIZAR_Usr_Usuario", dtParametros, ref sMsjError);
+            //obj_service.InsertarNonQuery("dbo.SP_ACTUALIZAR_Usr_Usuario", dtParametros, ref sMsjError);
 
             if (sMsjError == string.Empty)
 
@@ -86,7 +86,7 @@ namespace Proyecto_BLL
         {
             DataTable dt = new DataTable();
 
-            dt = obj_Service.Listar("dbo.SP_Seleccionar_Usr_Usuario");
+            //dt = obj_Service.Listar("dbo.SP_Seleccionar_Usr_Usuario");
 
             return dt;
 
@@ -95,11 +95,11 @@ namespace Proyecto_BLL
         public DataTable FiltrartipoEvento(ref CLS_UsrUsuario_DAL obj_DAL, string Filtro)
         {
             DataTable DT = new DataTable();
-            DT = obj_service.Filtrar("dbo.SP_Filtrar_Usr_Usuario", "@i_PK_idUsuario", SqlDbType.Int, Filtro);
+            //DT = obj_service.Filtrar("dbo.SP_Filtrar_Usr_Usuario", "@i_PK_idUsuario", SqlDbType.Int, Filtro);
 
             return DT;
         } }
 
 
         }
-    }
+    

@@ -8,11 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Proyecto_SITE.ServiceReference {
+namespace Proyecto_SITE.ServiceReference1 {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference.IBD")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IBD")]
     public interface IBD {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBD/ListarDatos", ReplyAction="http://tempuri.org/IBD/ListarDatosResponse")]
@@ -20,6 +20,12 @@ namespace Proyecto_SITE.ServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBD/ListarDatos", ReplyAction="http://tempuri.org/IBD/ListarDatosResponse")]
         System.Threading.Tasks.Task<System.Data.DataTable> ListarDatosAsync(string sNombreSP);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBD/ListarDatosZona", ReplyAction="http://tempuri.org/IBD/ListarDatosZonaResponse")]
+        System.Data.DataTable ListarDatosZona(string sNombreSP);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBD/ListarDatosZona", ReplyAction="http://tempuri.org/IBD/ListarDatosZonaResponse")]
+        System.Threading.Tasks.Task<System.Data.DataTable> ListarDatosZonaAsync(string sNombreSP);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBD/Insertar_Usuarios", ReplyAction="http://tempuri.org/IBD/Insertar_UsuariosResponse")]
         string Insertar_Usuarios(string Correo, string Clave, string Nombre, string Notas, string Telefono, bool Notificaciones);
@@ -59,12 +65,12 @@ namespace Proyecto_SITE.ServiceReference {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IBDChannel : Proyecto_SITE.ServiceReference.IBD, System.ServiceModel.IClientChannel {
+    public interface IBDChannel : Proyecto_SITE.ServiceReference1.IBD, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class BDClient : System.ServiceModel.ClientBase<Proyecto_SITE.ServiceReference.IBD>, Proyecto_SITE.ServiceReference.IBD {
+    public partial class BDClient : System.ServiceModel.ClientBase<Proyecto_SITE.ServiceReference1.IBD>, Proyecto_SITE.ServiceReference1.IBD {
         
         public BDClient() {
         }
@@ -91,6 +97,14 @@ namespace Proyecto_SITE.ServiceReference {
         
         public System.Threading.Tasks.Task<System.Data.DataTable> ListarDatosAsync(string sNombreSP) {
             return base.Channel.ListarDatosAsync(sNombreSP);
+        }
+        
+        public System.Data.DataTable ListarDatosZona(string sNombreSP) {
+            return base.Channel.ListarDatosZona(sNombreSP);
+        }
+        
+        public System.Threading.Tasks.Task<System.Data.DataTable> ListarDatosZonaAsync(string sNombreSP) {
+            return base.Channel.ListarDatosZonaAsync(sNombreSP);
         }
         
         public string Insertar_Usuarios(string Correo, string Clave, string Nombre, string Notas, string Telefono, bool Notificaciones) {

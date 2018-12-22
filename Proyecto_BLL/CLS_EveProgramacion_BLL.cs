@@ -23,7 +23,7 @@ namespace Proyecto_BLL
             dtParametros.Rows.Add("@dt_horaProgramacion", "2", obj_DAL.HoraProgramacion1);
             dtParametros.Rows.Add("@i_FK_idLugar", "1", obj_DAL.IDLugar1);
 
-            obj_service.InsertarNonQuery("dbo.SP__INSERTAR_eve_Programacion", dtParametros, ref sMsjError);
+            //obj_service.InsertarNonQuery("dbo.SP__INSERTAR_eve_Programacion", dtParametros, ref sMsjError);
 
             if (sMsjError == string.Empty)
 
@@ -53,7 +53,7 @@ namespace Proyecto_BLL
             dtParametros.Rows.Add("@dt_horaProgramacion", "2", obj_DAL.HoraProgramacion1);
             dtParametros.Rows.Add("@i_FK_idLugar", "1", obj_DAL.IDLugar1);
 
-            obj_service.InsertarNonQuery("dbo.SP_ACTUALIZAR_eve_Programacion", dtParametros, ref sMsjError);
+            //obj_service.InsertarNonQuery("dbo.SP_ACTUALIZAR_eve_Programacion", dtParametros, ref sMsjError);
 
             if (sMsjError == string.Empty)
 
@@ -74,7 +74,7 @@ namespace Proyecto_BLL
         {
             DataTable dt = new DataTable();
 
-            dt = obj_Service.Listar("dbo.SP_SELECCIONAR_eve_Programacion");
+            //dt = obj_Service.Listar("dbo.SP_SELECCIONAR_eve_Programacion");
 
             return dt;
 
@@ -83,7 +83,7 @@ namespace Proyecto_BLL
         public DataTable FiltrarEveProgramacion(ref CLS_Evento_DAL obj_DAL, string Filtro)
         {
             DataTable DT = new DataTable();
-            DT = obj_service.Filtrar("dbo.SP_Filtrar_eve_Programacion", "@i_PK_idProgramacion", SqlDbType.Int, Filtro);
+            //DT = obj_service.Filtrar("dbo.SP_Filtrar_eve_Programacion", "@i_PK_idProgramacion", SqlDbType.Int, Filtro);
 
             return DT;
 

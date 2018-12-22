@@ -27,7 +27,7 @@ namespace Proyecto_BLL
 
 
            
-            obj_service.InsertarNonQuery("dbo.SP_INSERTAR_fac_Compra", dtParametros, ref sMsjError);
+            //obj_service.InsertarNonQuery("dbo.SP_INSERTAR_fac_Compra", dtParametros, ref sMsjError);
 
             if (sMsjError == string.Empty)
 
@@ -61,7 +61,7 @@ namespace Proyecto_BLL
 
 
 
-            obj_service.InsertarNonQuery("dbo.SP_ACTUALIZAR_fac_Compra", dtParametros, ref sMsjError);
+            //obj_service.InsertarNonQuery("dbo.SP_ACTUALIZAR_fac_Compra", dtParametros, ref sMsjError);
 
             if (sMsjError == string.Empty)
 
@@ -82,7 +82,7 @@ namespace Proyecto_BLL
         {
             DataTable dt = new DataTable();
 
-            dt = obj_Service.Listar("dbo.SP_Seleccionar_fac_Compra");
+            //dt = obj_Service.Listar("dbo.SP_Seleccionar_fac_Compra");
 
             return dt;
 
@@ -91,7 +91,7 @@ namespace Proyecto_BLL
         public DataTable FiltrarFacCompra(ref CLS_FacCompra_DAL obj_DAL, string Filtro)
         {
             DataTable DT = new DataTable();
-            DT = obj_service.Filtrar("dbo.SP_Filtrar_fac_Compra", "@i_PK_idCompra", SqlDbType.Int, Filtro);
+            //DT = obj_service.Filtrar("dbo.SP_Filtrar_fac_Compra", "@i_PK_idCompra", SqlDbType.Int, Filtro);
 
             return DT;
 

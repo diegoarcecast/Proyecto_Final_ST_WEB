@@ -23,7 +23,7 @@ namespace Proyecto_BLL
             dtParametros.Rows.Add("@vc_nombreTipoZona", "2", obj_DAL.NombreTipoZona1);
             dtParametros.Rows.Add("@vc_descripcionTipoZona", "2", obj_DAL.DescripcionTipoZona1);
            
-            obj_service.InsertarNonQuery("dbo.SP__INSERTAR_eve_TipoZona", dtParametros, ref sMsjError);
+            //obj_service.InsertarNonQuery("dbo.SP__INSERTAR_eve_TipoZona", dtParametros, ref sMsjError);
 
             if (sMsjError == string.Empty)
 
@@ -53,7 +53,7 @@ namespace Proyecto_BLL
             dtParametros.Rows.Add("@vc_nombreTipoZona", "2", obj_DAL.NombreTipoZona1);
             dtParametros.Rows.Add("@vc_descripcionTipoZona", "2", obj_DAL.DescripcionTipoZona1);
 
-            obj_service.InsertarNonQuery("dbo.SP_ACTUALIZAR_eve_TipoZona", dtParametros, ref sMsjError);
+            //obj_service.InsertarNonQuery("dbo.SP_ACTUALIZAR_eve_TipoZona", dtParametros, ref sMsjError);
 
             if (sMsjError == string.Empty)
 
@@ -74,7 +74,7 @@ namespace Proyecto_BLL
         {
             DataTable dt = new DataTable();
 
-            dt = obj_Service.Listar("dbo.SP_SELECCIONAR_eve_TipoZona");
+            //dt = obj_Service.Listar("dbo.SP_SELECCIONAR_eve_TipoZona");
 
             return dt;
 
@@ -83,7 +83,7 @@ namespace Proyecto_BLL
         public DataTable FiltrarEveTipoZona(ref CLS_EveProgramacion_DAL obj_DAL, string Filtro)
         {
             DataTable DT = new DataTable();
-            DT = obj_service.Filtrar("dbo.SP_Filtrar_eve_TipoZona", "@i_PK_idTipoZona", SqlDbType.Int, Filtro);
+            //DT = obj_service.Filtrar("dbo.SP_Filtrar_eve_TipoZona", "@i_PK_idTipoZona", SqlDbType.Int, Filtro);
 
             return DT;
 

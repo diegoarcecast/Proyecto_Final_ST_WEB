@@ -1,0 +1,4 @@
+C:\Users\Alexander\Source\Repos\Proyecto_Final_ST_WEB\Proyecto_DAL\bin\Debug\Proyecto_DAL.dll
+C:\Users\Alexander\Source\Repos\Proyecto_Final_ST_WEB\Proyecto_DAL\bin\Debug\Proyecto_DAL.pdb
+C:\Users\Alexander\Source\Repos\Proyecto_Final_ST_WEB\Proyecto_DAL\obj\Debug\Proyecto_DAL.dll
+C:\Users\Alexander\Source\Repos\Proyecto_Final_ST_WEB\Proyecto_DAL\obj\Debug\Proyecto_DAL.pdb

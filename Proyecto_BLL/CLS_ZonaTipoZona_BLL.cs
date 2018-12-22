@@ -25,7 +25,7 @@ namespace Proyecto_BLL
 
 
 
-            obj_service.InsertarNonQuery("dbo.SP__INSERTAR_eve_Zona_TipoZona", dtParametros, ref sMsjError);
+            //obj_service.InsertarNonQuery("dbo.SP__INSERTAR_eve_Zona_TipoZona", dtParametros, ref sMsjError);
 
             if (sMsjError == string.Empty)
 
@@ -57,7 +57,7 @@ namespace Proyecto_BLL
 
 
 
-            obj_service.InsertarNonQuery("dbo.SP_ACTUALIZAR_eve_Zona_TipoZona", dtParametros, ref sMsjError);
+            //obj_service.InsertarNonQuery("dbo.SP_ACTUALIZAR_eve_Zona_TipoZona", dtParametros, ref sMsjError);
 
             if (sMsjError == string.Empty)
 
@@ -78,7 +78,7 @@ namespace Proyecto_BLL
         {
             DataTable dt = new DataTable();
 
-            dt = obj_Service.Listar("dbo.SP_SELECCIONAR_eve_Zona_TipoZona");
+            //dt = obj_Service.Listar("dbo.SP_SELECCIONAR_eve_Zona_TipoZona");
 
             return dt;
 
@@ -87,7 +87,7 @@ namespace Proyecto_BLL
         public DataTable FiltrartipoEvento(ref CLS_ZonaTipoZona_DAL obj_DAL, string Filtro)
         {
             DataTable DT = new DataTable();
-            DT = obj_service.Filtrar("dbo.Filtrar_eve_Zona_TipoZona", "@i_PK_idZonaTipo", SqlDbType.Int, Filtro);
+            //DT = obj_service.Filtrar("dbo.Filtrar_eve_Zona_TipoZona", "@i_PK_idZonaTipo", SqlDbType.Int, Filtro);
 
             return DT;
         }
@@ -95,4 +95,4 @@ namespace Proyecto_BLL
 
 
 }
-}
+

@@ -23,7 +23,7 @@ namespace Proyecto_BLL
             dtParametros.Rows.Add("@i_PK_idEstado", "2", obj_DAL.IDEstado1);
             dtParametros.Rows.Add("vc_nombreEstado", "2", obj_DAL.NombreEstado1);
 
-            obj_service.InsertarNonQuery("dbo.eve_Estado", dtParametros, ref sMsjError);
+            //obj_service.InsertarNonQuery("dbo.eve_Estado", dtParametros, ref sMsjError);
 
             if (sMsjError == string.Empty)
 
@@ -55,7 +55,7 @@ namespace Proyecto_BLL
             dtParametros.Rows.Add("@i_PK_idEstado", "2", obj_DAL.IDEstado1);
             dtParametros.Rows.Add("vc_nombreEstado", "2", obj_DAL.NombreEstado1);
 
-            obj_service.InsertarNonQuery("dbo.SP_ACTUALIZAR_eve_Estado", dtParametros, ref sMsjError);
+            //obj_service.InsertarNonQuery("dbo.SP_ACTUALIZAR_eve_Estado", dtParametros, ref sMsjError);
 
             if (sMsjError == string.Empty)
 
@@ -76,7 +76,7 @@ namespace Proyecto_BLL
         {
             DataTable dt = new DataTable();
 
-            dt = obj_Service.Listar("dbo.SP_SELECCIONAR_eve_Estado");
+            //dt = obj_Service.Listar("dbo.SP_SELECCIONAR_eve_Estado");
 
             return dt;
 
@@ -85,7 +85,7 @@ namespace Proyecto_BLL
         public DataTable FiltrarEstado(ref CLS_Estado_DAL obj_DAL, string Filtro)
         {
             DataTable DT = new DataTable();
-            DT = obj_service.Filtrar("dbo.SP_Filtrar_eve_Estado", "@i_PK_idEstado", SqlDbType.Int, Filtro);
+            //DT = obj_service.Filtrar("dbo.SP_Filtrar_eve_Estado", "@i_PK_idEstado", SqlDbType.Int, Filtro);
 
             return DT;
 

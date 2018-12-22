@@ -24,7 +24,7 @@ namespace Proyecto_BLL
            
 
 
-            obj_service.InsertarNonQuery("dbo.SP__INSERTAR_eve_TipoEvento", dtParametros, ref sMsjError);
+            //obj_service.InsertarNonQuery("dbo.SP__INSERTAR_eve_TipoEvento", dtParametros, ref sMsjError);
 
             if (sMsjError == string.Empty)
 
@@ -55,7 +55,7 @@ namespace Proyecto_BLL
 
 
 
-            obj_service.InsertarNonQuery("dbo.SP_ACTUALIZAR_eve_TipoEvento", dtParametros, ref sMsjError);
+            //obj_service.InsertarNonQuery("dbo.SP_ACTUALIZAR_eve_TipoEvento", dtParametros, ref sMsjError);
 
             if (sMsjError == string.Empty)
 
@@ -76,7 +76,7 @@ namespace Proyecto_BLL
         {
             DataTable dt = new DataTable();
 
-            dt = obj_Service.Listar("dbo.SP_SELECCIONAR_eve_TipoEvento");
+            //dt = obj_Service.Listar("dbo.SP_SELECCIONAR_eve_TipoEvento");
 
             return dt;
 
@@ -85,7 +85,7 @@ namespace Proyecto_BLL
         public DataTable FiltrartipoEvento(ref CLS_TipoEvento_DAL obj_DAL, string Filtro)
         {
             DataTable DT = new DataTable();
-            DT = obj_service.Filtrar("dbo.SP_Filtrar_eve_TipoEvento", "@i_PK_idTipoEvento", SqlDbType.Int, Filtro);
+            //DT = obj_service.Filtrar("dbo.SP_Filtrar_eve_TipoEvento", "@i_PK_idTipoEvento", SqlDbType.Int, Filtro);
 
             return DT;
 
